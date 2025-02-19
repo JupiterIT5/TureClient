@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import styles from './kwizcomponent.module.scss'
 import Modal from './Modal/Modal'
-import { useMutation, useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 
 const KwizComponent = () => {
@@ -39,7 +38,7 @@ const KwizComponent = () => {
 			setNameError(true)
 		}
 		if (name.length == 0 || phone.length == 0 || email.length ==0) return 
-		await axios.post('http://127.0.0.1:3000/kwiz/addKwiz', {
+		await axios.post('http://109.71.242.40:3000/kwiz/addKwiz', {
 			name,email,phone,step1,step2,step3,step4,step5,step6
 		}).then(() => setModal(true))
 	}

@@ -11,7 +11,7 @@ const TureComponent = () => {
 	const {data} = useQuery<Array<ITure>>({
 		queryKey: ['getTure'],
 		queryFn: async () => {
-			const {data} = await axios.get('http://localhost:3000/ture/getTure')
+			const {data} = await axios.get('http://109.71.242.40:3000/ture/getTure')
 			return data
 		}
 	})

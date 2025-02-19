@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import styles from './Modal.module.scss'
-import { useMutation, useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 
 const Modal = ({ nameTure }: { nameTure: string }) => {
@@ -45,7 +44,7 @@ const Modal = ({ nameTure }: { nameTure: string }) => {
 		)
 			return
 
-		await axios.post('http://localhost:3000/ture/addUserTure', {
+		await axios.post('http://109.71.242.40:3000/ture/addUserTure', {
 			name,
 			surName,
 			lastName,
