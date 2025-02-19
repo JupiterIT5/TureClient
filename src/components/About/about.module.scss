@@ -1,0 +1,230 @@
+.about {
+	margin-top: 100px;
+	padding: 0 60px;
+	padding-bottom: 31px;
+
+	.title {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 72px;
+		line-height: 90%;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+
+	.subtitle {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 39px;
+		color: #ffffff;
+		padding-right: 20%;
+		margin-bottom: 100px;
+	}
+
+	.hotTour {
+		width: 100%;
+		height: auto;
+
+		.nextTour {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			color: #fff;
+			margin-bottom: 20px;
+
+			h2 {
+				font-size: 32px;
+			}
+
+			a {
+				font-size: 24px;
+			}
+		}
+
+		.tourContainer {
+			display: flex;
+			flex-direction: row;
+			gap: 20px;
+			justify-content: space-between;
+
+			.tour {
+				max-width: 430px;
+				width: 100%;
+				height: 190px;
+				display: flex;
+				flex-direction: row;
+				padding: 20px;
+				gap: 15px;
+				border-radius: 20px;
+				background-color: rgba($color: #000000, $alpha: 0.5);
+
+				img {
+					width: 150px;
+					height: 150px;
+				}
+
+				.tourName {
+					h3 {
+						font-family: 'Montserrat';
+						font-style: normal;
+						font-weight: 600;
+						font-size: 36px;
+						line-height: 90%;
+						color: #ffffff;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font-family: 'Montserrat';
+						font-style: normal;
+						font-weight: 300;
+						font-size: 20px;
+						line-height: 24px;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1342px) {
+	.about {
+		.title {
+			font-size: 48px;
+			line-height: 52px;
+		}
+		.subtitle{
+			font-size: 28px;
+			line-height: 32px;
+		}
+		.hotTour {
+			.nextTour {
+				h2 {
+					font-size: 24px;
+				}
+
+				a {
+					font-size: 18px;
+				}
+			}
+			.tourContainer {
+				.tour {
+					height: auto;
+					img {
+						width: 120px;
+						height: 120px;
+					}
+					.tourName {
+						h3 {
+							font-size: 24px;
+							line-height: 28px;
+						}
+
+						p {
+							font-size: 18px;
+							line-height: 22px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1125px) {
+	.about {
+		.hotTour {
+			.tourContainer {
+				overflow-x: scroll;
+				&::-webkit-scrollbar {
+					background-color: transparent;
+				}
+
+				.tour {
+					min-width: 326px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.about {
+		.title {
+			font-size: 40px;
+			line-height: 40px;
+		}
+		.subtitle {
+			font-size: 20px;
+			line-height: 24px;
+			padding-right: 5%;
+		}
+	}
+}
+
+@media (max-width: 906px) {
+	.about {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.about {
+		.title {
+			font-size: 36px;
+		}
+		.subtitle {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.about {
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 450px) {
+	.about {
+		.title {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		.subtitle {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		.hotTour {
+			.nextTour {
+				h2 {
+					font-size: 18px;
+				}
+				a {
+					font-size: 16px;
+				}
+			}
+			.tourContainer {
+				.tour {
+					min-width: 320px;
+					.tourName {
+						h3 {
+							font-size: 20px;
+							line-height: 24px;
+						}
+						p {
+							font-size: 16px;
+							line-height: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

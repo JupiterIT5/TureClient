@@ -1,0 +1,333 @@
+.kwiz {
+	padding: 60px;
+	width: 100%;
+
+	.title {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 80px;
+		line-height: 90%;
+		color: #29452f;
+	}
+	.subtitle {
+		margin: 30px 0;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 52px;
+		color: #0d250f;
+	}
+
+	.stepContainer {
+		margin-bottom: 20px;
+		border: 3px solid rgba(13, 37, 15, 1);
+		border-radius: 30px;
+		padding: 30px;
+		height: auto;
+
+		h3 {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 48px;
+			line-height: 59px;
+			color: #0d250f;
+			margin-bottom: 20px;
+		}
+
+		.input {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 20px;
+			margin-bottom: 10px;
+
+			.radio {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				border: 2px solid #000;
+				background-color: transparent;
+				transition: 0.2s all;
+			}
+
+			.radioActive {
+				border: 10px solid #000;
+				transition: 0.2s all;
+			}
+
+			label {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 49px;
+				color: #000000;
+			}
+		}
+		.success {
+			width: 100%;
+			height: 69px;
+			background-color: rgba(13, 37, 15, 1);
+			border-radius: 20px;
+			border: none;
+			color: #fff;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 49px;
+			margin-top: 30px;
+			cursor: pointer;
+			transition: 0.3s all;
+
+			&:hover {
+				scale: 1.02;
+				transition: 0.3s all;
+			}
+		}
+	}
+
+	.stepContainerActive {
+		background-color: rgba(81, 132, 92, 1);
+		border: none;
+		h3, .input label {
+			color: #fff
+		}
+		.input {
+			.radio {
+				border: 2px solid #fff;
+				transition: 0.2s all;
+			}
+
+			.radioActive {
+				border: 10px solid #fff;
+				transition: 0.2s all;
+			}
+		}
+	}
+
+	&>h4 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 90%;
+		color: #29452f;
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+
+	&>p {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 39px;
+		color: #0d250f;
+		margin-bottom: 20px;
+	}
+
+	&>h5 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 59px;
+		color: #0d250f;
+		margin-bottom: 30px;
+	}
+
+	&>input {
+		width: 100%;
+		height: 91px;
+		border: 3px solid rgba(13, 37, 15, 1);
+		border-radius: 30px;
+		padding-left: 60px;
+		outline: none;
+		background-color: #fff;
+		margin-bottom: 10px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 39px;
+		color: #000000;
+	}
+
+	&>.error {
+		border: 3px solid red;
+
+		&::placeholder {
+			color: red
+		}
+	}
+
+	&>button {
+		width: 50%;
+		height: 90px;
+		background-color: rgba(13, 37, 15, 1);
+		border-radius: 30px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 49px;
+		color: #ffffff;
+		margin-top: 20px;
+		border: none;
+		transition: .3s all;
+		cursor: pointer;
+
+		&:hover {
+			scale: 1.02;
+			transition: .3s all;
+		}
+	}
+
+	&>b {
+		display: block;
+		margin-top: 30px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 59px;
+		color: #0d250f;
+	}
+}
+
+@media (max-width: 930px) {
+	.kwiz {
+		.title {
+			font-size: 48px;
+			line-height: 52px;
+		}
+		.subtitle {
+			font-size: 32px;
+			line-height: 36px;
+		}
+		.stepContainer {
+			h3 {
+				font-size: 32px;
+				line-height: 36px;
+			}
+			.input {
+				label {
+					font-size: 28px;
+					line-height: 32px;
+				}
+				.radio {
+					width: 30px;
+					height: 30px;
+				}
+			}
+			.success {
+				font-size: 32px;
+			}
+		}
+		&>h4 {
+			font-size: 36px;
+			line-height: 40px;
+		}
+		&>p {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		&>h5 {
+			font-size: 32px;
+			line-height: 36px;
+		}
+		&>input {
+			font-size: 28px;
+			height: 48px;
+			padding-left: 40px;
+		}
+		&>button {
+			font-size: 28px;
+			height: 58px;
+		}
+		&>b {
+			font-size: 32px;
+			line-height: 36px;
+		}
+	}
+}
+
+@media (max-width: 906px) {
+	.kwiz {
+		padding: 30px 15px;
+	}
+}
+
+@media (max-width: 630px) {
+	.kwiz {
+		&>button {
+			width: 100%;
+			font-size: 24px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.kwiz {
+		.title {
+			font-size: 32px;
+			line-height: 36px;
+		}
+		.subtitle {
+			font-size: 24px;
+			line-height: 28px;
+		}
+		.stepContainer {
+			padding: 15px;
+			h3 {
+				font-size: 24px;
+				line-height: 28px;
+			}
+			.input {
+				gap: 10px;
+				label {
+					font-size: 20px;
+					line-height: 24px;
+				}
+				.radio {
+					width: 20px;
+					height: 20px;
+				}
+			}
+			.success {
+				height: 42px;
+				font-size: 24px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		&>h4 {
+			font-size: 32px;
+			line-height: 26px;
+		}
+		&>p {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&>h5 {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		&>input {
+			font-size: 20px;
+			padding-left: 20px;
+		}
+		&>button {
+			font-size: 24px;
+		}
+		&>b {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+}

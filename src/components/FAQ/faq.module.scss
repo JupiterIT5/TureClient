@@ -1,0 +1,81 @@
+.faq {
+	padding: 60px;
+
+	.title {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 80px;
+		line-height: 90%;
+		color: #29452f;
+	}
+	h2 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 59px;
+		color: #0d250f;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	p, li {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 32px;
+		color: #000000;
+	}
+
+	li {
+		margin-left: 30px;
+	}
+
+	ul>li {
+		list-style-type: disc;
+	}
+}
+
+@media (max-width: 932px) {
+	.faq {
+		.title {
+			font-size: 48px;
+			line-height: 52px;
+		}
+
+		h2 {
+			font-size: 32px;
+			line-height: 36px;
+		}
+
+		p,li {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+}
+
+@media (max-width: 906px) {
+	.faq {
+		padding: 30px 15px;
+	}
+}
+
+@media (max-width: 522px) {
+	.faq {
+		.title {
+			font-size: 32px;
+			line-height: 36px;
+		}
+		h2 {
+			font-size: 24px;
+			line-height: 28px;
+		}
+		p,li {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+}

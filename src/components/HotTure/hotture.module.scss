@@ -1,0 +1,184 @@
+.hotture {
+	width: 100%;
+	height: auto;
+	padding: 60px;
+	background-color: rgba(41, 69, 47, 1);
+
+	.title {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 80px;
+		line-height: 90%;
+		color: #ffffff;
+	}
+
+	.subtitle {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 32px;
+		line-height: 39px;
+		color: #ffffff;
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+	.actualName {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 48px;
+		line-height: 59px;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+	.actualTure {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr 0.5fr 0.5fr;
+
+		.ture {
+			width: 100%;
+			height: auto;
+			position: relative;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			.tureName {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 20%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 20px;
+				background-color: rgba(0,0,0,.2);
+
+				h2,
+				p {
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 600;
+					font-size: 48px;
+					line-height: 59px;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1330px) {
+	.hotture {
+		.actualTure {
+			.ture {
+				.tureName {
+					h2,p {
+						font-size: 32px;
+						line-height: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	.hotture {
+		.title {
+			font-size: 72px;
+			line-height: 52px;
+		}
+		.subtitle {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		.actualTure {
+			.ture {
+				.tureName {
+					h2, p {
+						font-size: 24px;
+						line-height: 28px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 906px) {
+	.hotture {
+		padding: 60px 15px;
+	}
+}
+
+@media (max-width: 800px) {
+	.hotture {
+		.title {
+			font-size: 48px;
+			line-height: 52px;
+		}
+		.subtitle {
+			font-size: 24px;
+			line-height: 28px;
+		}
+		.actualName {
+			font-size: 32px;
+			line-height: 40px;
+		}
+		.actualTure {
+			gap: 10px
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.hotture {
+		.actualTure {
+			overflow-x: scroll;
+			max-width: 650px;
+			height: 295px;
+			padding: 0;
+			&::-webkit-scrollbar {
+				background-color: transparent;
+			}
+			.ture:nth-child(1) {
+				min-width: 300px;
+			}
+			.ture:nth-child(2), .ture:nth-child(3) {
+				min-width: 150px;
+			}
+			.ture {
+				height: 250px;
+				.tureName {
+					h2,p {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.hotture {
+		padding: 30px 15px;
+		padding-bottom: 0;
+		.title {
+			font-size: 32px;
+			line-height: 36px;
+		}
+		.subtitle {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.actualName {
+			font-size: 28px;
+			line-height: 32px;
+		}
+	}
+}
