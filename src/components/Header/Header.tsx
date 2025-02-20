@@ -1,5 +1,6 @@
 import style from './header.module.scss'
 import logo from '../../images/img/logo1.png'
+import file from './price.pdf'
 
 const Header = ({fon}: {fon?: boolean}) => {
 	return (
@@ -9,7 +10,7 @@ const Header = ({fon}: {fon?: boolean}) => {
 				<a href="/about">О нас</a>
 				<a href="/ture">Туры</a>
 				<a href="/kwiz">Подбор тура</a>
-				<a href="#">Прайс</a>
+				<a href="price.pdf" download={file}>Прайс</a>
 			</nav>
 		</header>
 	)
